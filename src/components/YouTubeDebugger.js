@@ -23,8 +23,8 @@ class YouTubeDebugger extends Component {
         ...this.state.settings,
         bitrate:12,
       }
-    })
-    console.log(this.state.settings)
+    },() => console.log(this.state.settings))
+
   }
 
   handleRezClick = (event) => {
@@ -36,8 +36,8 @@ class YouTubeDebugger extends Component {
         resolution:'720p'
         }
       }
-    })
-      console.log(this.state.settings)
+    }, () => console.log(this.state.settings.video))
+
   }
 
   render() {
